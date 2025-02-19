@@ -6,7 +6,15 @@ def calculate(list):
 
     a = np.reshape(a, (3,3))
 
-    calculations = a
+    calculations = {
+        'mean': [a.mean(axis=0), a.mean(axis=1), a.mean()]
+        #,
+        #'variance': [axis1, axis2, flattened],
+        #'standard deviation': [axis1, axis2, flattened],
+        #'max': [axis1, axis2, flattened],
+        #'min': [axis1, axis2, flattened],
+        #'sum': [axis1, axis2, flattened]
+    }
 
     return calculations
 
